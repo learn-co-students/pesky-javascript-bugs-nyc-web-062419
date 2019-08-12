@@ -1,6 +1,6 @@
 /*!
 
- handlebars v4.0.5
+handlebars v4.0.5
 
 Copyright (C) 2011-2015 by Yehuda Katz
 
@@ -114,22 +114,22 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _create = _handlebarsRuntime2['default'].create;
 	function create() {
-	  var hb = _create();
+	var hb = _create();
 
-	  hb.compile = function (input, options) {
-	    return _handlebarsCompilerCompiler.compile(input, options, hb);
-	  };
-	  hb.precompile = function (input, options) {
-	    return _handlebarsCompilerCompiler.precompile(input, options, hb);
-	  };
+	hb.compile = function (input, options) {
+	return _handlebarsCompilerCompiler.compile(input, options, hb);
+	};
+	hb.precompile = function (input, options) {
+	return _handlebarsCompilerCompiler.precompile(input, options, hb);
+	};
 
-	  hb.AST = _handlebarsCompilerAst2['default'];
-	  hb.Compiler = _handlebarsCompilerCompiler.Compiler;
-	  hb.JavaScriptCompiler = _handlebarsCompilerJavascriptCompiler2['default'];
-	  hb.Parser = _handlebarsCompilerBase.parser;
-	  hb.parse = _handlebarsCompilerBase.parse;
+	hb.AST = _handlebarsCompilerAst2['default'];
+	hb.Compiler = _handlebarsCompilerCompiler.Compiler;
+	hb.JavaScriptCompiler = _handlebarsCompilerJavascriptCompiler2['default'];
+	hb.Parser = _handlebarsCompilerBase.parser;
+	hb.parse = _handlebarsCompilerBase.parse;
 
-	  return hb;
+	return hb;
 	}
 
 	var inst = create();
@@ -151,9 +151,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	"use strict";
 
 	exports["default"] = function (obj) {
-	  return obj && obj.__esModule ? obj : {
-	    "default": obj
-	  };
+		return obj && obj.__esModule ? obj : {
+		"default": obj
+		};
 	};
 
 	exports.__esModule = true;
@@ -282,24 +282,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.COMPILER_REVISION = COMPILER_REVISION;
 	var REVISION_CHANGES = {
 	  1: '<= 1.0.rc.2', // 1.0.rc.2 is actually rev2 but doesn't report it
-	  2: '== 1.0.0-rc.3',
-	  3: '== 1.0.0-rc.4',
-	  4: '== 1.x.x',
-	  5: '== 2.0.0-alpha.x',
-	  6: '>= 2.0.0-beta.1',
-	  7: '>= 4.0.0'
+		2: '== 1.0.0-rc.3',
+		3: '== 1.0.0-rc.4',
+		4: '== 1.x.x',
+		5: '== 2.0.0-alpha.x',
+		6: '>= 2.0.0-beta.1',
+		7: '>= 4.0.0'
 	};
 
 	exports.REVISION_CHANGES = REVISION_CHANGES;
 	var objectType = '[object Object]';
 
 	function HandlebarsEnvironment(helpers, partials, decorators) {
-	  this.helpers = helpers || {};
-	  this.partials = partials || {};
-	  this.decorators = decorators || {};
+		this.helpers = helpers || {};
+		this.partials = partials || {};
+		this.decorators = decorators || {};
 
-	  _helpers.registerDefaultHelpers(this);
-	  _decorators.registerDefaultDecorators(this);
+		_helpers.registerDefaultHelpers(this);
+		_decorators.registerDefaultDecorators(this);
 	}
 
 	HandlebarsEnvironment.prototype = {

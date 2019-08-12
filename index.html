@@ -23,14 +23,14 @@
   <script src="jsBugs/cleanCode.js"></script>
   <script id="repository-template" type="text/x-handlebars-template">
       <ul>
-       {{#each this}}
-         <li>
-           <h2><a href="{{html_url}}">{{name}}</a></h2>
-           {{> authorPartial owner }}
-           <p>Watchers: {{watchers_count}}</p>
-           <p>Forks: {{forks_count}}</p>
-           <p>Issues: {{open_issues_count}}</p>
-         </li>
+      {{#each this}}
+        <li>
+          <h2><a href="{{html_url}}">{{name}}</a></h2>
+          {{> authorPartial owner }}
+          <p>Watchers: {{watchers_count}}</p>
+          <p>Forks: {{forks_count}}</p>
+          <p>Issues: {{open_issues_count}}</p>
+        </li>
         {{/each}}
       </ul>
     </script>
@@ -43,13 +43,14 @@
   <script src="jsBugs/aGoodJsFile.js"></script>
   <script src="jsBugs/dontEvenCheckThisOne.js"></script>
   <script src="jsBugs/impressivelyCorrect.js"></script>
-  <script src="jsBugs/leaveMeAlone.js"></script>
+  <script src="jsBugs/cleanCode.js"></script>
+  <!-- <script src="jsBugs/leaveMeAlone.js"></script>
   <script src="jsBugs/noBugsHere.js"></script>
   <script src="jsBugs/nothingToFixHere.js"></script>
   <script src="jsBugs/anotherFile.js"></script>
   <script src="jsBugs/perfectCode.js"></script>
   <script src="jsBugs/productionReady.js"></script>
-  <script src="jsBugs/zeroMistakes.js"></script>
+  <script src="jsBugs/zeroMistakes.js"></script> -->
 </body>
 
 </html>

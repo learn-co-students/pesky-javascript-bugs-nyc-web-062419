@@ -8,8 +8,8 @@ const students = [
 
 const totalLabsComplete = students => {
   return students.reduce((total, student) => {
-    return labsComplete + total
-  })
+    return student.labsComplete + total
+  },0)
 }
 
 const averageLabsComplete = students => {
