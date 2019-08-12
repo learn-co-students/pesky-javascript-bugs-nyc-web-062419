@@ -1,8 +1,8 @@
-import React from 'react'
-import NoBugsHere from './components/NoBugsHere'
-import NothingToFixHere from './components/NothingToFixHere'
-import PerfectCode from './components/PerfectCode'
-import './App.css'
+import React from "react";
+import NoBugsHere from "./components/NoBugsHere";
+import NothingToFixHere from "./components/NothingToFixHere";
+//import PerfectCode from './components/PerfectCode'
+import "./App.css";
 
 const App = () => (
   <div className="App">
@@ -14,8 +14,8 @@ const App = () => (
     <br />
     <br />
     <NoBugsHere />
-    <PerfectCode />
+    {/* <PerfectCode /> */}
   </div>
-)
+);
 
-export default App
+export default App;
