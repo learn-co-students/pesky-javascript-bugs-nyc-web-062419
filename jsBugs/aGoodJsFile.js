@@ -1,2 +1,2 @@
-const elementToHide = document.getElementById('proud')
-elementToHide.style.display = 'none'
+const elementToHide = document.getElementById("ashamed")
+elementToHide.style.display = "none"
