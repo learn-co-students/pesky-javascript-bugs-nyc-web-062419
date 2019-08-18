@@ -8,13 +8,14 @@ const students = [
 
 const totalLabsComplete = students => {
   return students.reduce((total, student) => {
-    return labsComplete + total
-  })
+    return total + student.labsComplete
+  }, 0)
 }
+
 
 const averageLabsComplete = students => {
   return totalLabsComplete(students) / students.length
 }
 
-console.log(averageLabsComplete(students))
+console.log(averageLabsComplete(students) )
 console.log('the log above this should say 529')
